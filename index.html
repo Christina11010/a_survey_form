@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Christina</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <div class="container">
+        <!-- Title -->
+        <header class="header">
+          <h1 id="title"
+              class="text-center">
+            Self-Taught Front End Developer
+          </h1>
+          <h4 id="subtitle"
+              class="text-center">
+            This is my journey as a self-taught front end developer with only a psychology degree...
+          </h4>
+          <p id="description" 
+             class="description text-center">
+            Thank you for taking the time to support my passion and dream.
+          </p>
+        </header>
+</head>
+<body>
+       <!-- Survey form -->
+       <form id="survey-form">
+      
+        <!-- Require input name -->
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input 
+                 type="text" 
+                 name="name"
+                 id="name"
+                 class="form-control"
+                 placeholder="Enter your name" 
+                 required
+                 /> 
+        </div>
+        
+        <!-- Require input email -->
+        <div class="form-group">
+          <label id="email-label" for="email">Email address: </label>
+          <input 
+               type="email" 
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter your email" 
+               required
+               />
+        </div>
+        
+        <!-- Require input number -->
+        <div class="form-group">
+          <label id="number-label" 
+                 for="number">
+            Age
+            <span class="clue">
+              (optional)
+            </span>
+            </label>
+          <input type="number" 
+                 nanme="age"
+                 id="number"
+                 min="8"
+                 max="99"
+                 class="form-control"
+                 placeholder="Enter your age"
+                 />
+        </div>
+        
+        <!-- Dropdown -->
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" 
+                  name="theme" 
+                  class="form-control" 
+                  required>
+            <option disabled selected value>
+              Select a role
+            </option>
+            <option value="student">University Student</option>
+            <option value="full-time">Full Time Job Worker</option>
+            <option value="part-time">Part Time JOb Worker</option>
+            <option value="Self-teaching">Self-teaching Student</option>
+            <option value="start-up">Start-up owner</option>
+            <option value="preferno">Prefer not to say</option>
+            <option value="others">Others</option>
+          </select><br><br>
+        </div>
+        
+        <!-- Radio button -->
+        <div class="form-group">
+          <p>Would you like to receive weekly updates?</p>
+          <label>
+            <input name="options"
+                   value="option-1"
+                   type="radio"
+                   class="input-radio"
+                   checked/>
+            Absolutely!
+          </label>
+          <label>
+            <input name="options"
+                   value="option-2"
+                   type="radio"
+                   class="input-radio"
+                   checked/>
+            Cruelly reject.
+          </label>
+        </div>
+        
+        <!-- Check box -->
+        <div class="form-group">
+          <p>
+            Any content that you would like to see me cover?
+            <span class="clue">(Check all that apply)</span></p>
+          <label>
+            <input name="prefer"
+                   value="materials"
+                   type="checkbox"
+                   class="input-checkbox"/>
+            My learning materials.
+          </label>
+          <label>
+            <input name="prefer"
+                   value="timetable"
+                   type="checkbox"
+                   class="input-checkbox"/>
+            My studying timetable.
+          </label>
+          <label>
+            <input name="prefer"
+                   value="choice"
+                   type="checkbox"
+                   class="input-checkbox"/>
+            How to choose the "right" path?
+          </label>
+          <label>
+            <input name="prefer"
+                   value="passion"
+                   type="checkbox"
+                   class="input-checkbox"/>
+            How to balance passion and security?
+          </label>
+          <label>
+            <input name="prefer"
+                   value="age"
+                   type="checkbox"
+                   class="input-checkbox"/>
+            It's too late for me to start anything new...
+          </label>
+        </div>  
+          
+        <!-- Comments -->
+        <div class="form-group">
+          <p>Anything you would like to share with me?</p>
+          <textarea id="comments"
+                    class="input-textarea"
+                    name="commentts"
+                    rows="3"
+                    cols="50"
+                    placeholder="Enter your comment here...">
+          </textarea>
+        </div>
+          
+        <!-- Submit -->
+        <div ckass="form-group">
+          <button id="submit" 
+                  type="submit-button">
+            Submit here
+          </button>
+        </div>
+      </form>
+    </main>
+  
+</body>
+</html>
